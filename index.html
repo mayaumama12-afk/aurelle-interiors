@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURELLE Interiors — Luxury Interior Design & Architectural Studio</title>
+  <meta name="description" content="AURELLE Interiors is a bespoke interior design studio crafting timeless, warm, and refined architectural spaces in London, Paris, and worldwide.">
+  <meta name="keywords" content="luxury interior design, architectural studio, bespoke furniture, space planning, residential design, modern warm interiors">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='serif' fill='%23343F35'>A</text></svg>">
+
+  <!-- Google Fonts: Cormorant Garamond & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar (Subtle Luxury Studio Note) -->
+  <div class="top-announcement">
+    <div class="container announcement-inner">
+      <span>London &amp; Paris Atelier &mdash; Accepting select residential commissions for 2026/2027</span>
+      <a href="#contact" class="announcement-link">Inquire Online &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Sticky Header -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <!-- Text Logo -->
+      <a href="#home" class="brand-logo" aria-label="AURELLE Interiors Home">
+        <span class="brand-name">AURELLE</span>
+        <span class="brand-tagline">INTERIORS</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header CTA & Mobile Toggle -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-consultation" id="openConsultationBtn" aria-haspopup="dialog">
+          Book a Consultation
+        </button>
+
+        <button type="button" class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+      <div class="mobile-nav-content">
+        <div class="mobile-drawer-top">
+          <span class="mobile-drawer-brand">AURELLE INTERIORS</span>
+          <button type="button" class="mobile-close-btn" id="mobileMenuClose" aria-label="Close Navigation Menu">
+            &times;
+          </button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="#home" class="mobile-link">Home</a></li>
+          <li><a href="#about" class="mobile-link">About</a></li>
+          <li><a href="#projects" class="mobile-link">Projects</a></li>
+          <li><a href="#services" class="mobile-link">Services</a></li>
+          <li><a href="#philosophy" class="mobile-link">Philosophy</a></li>
+          <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+          <button type="button" class="btn btn-primary btn-block" id="mobileConsultationBtn">
+            Book a Consultation
+          </button>
+          <div class="mobile-contact-snippet">
+            <p>studio@aurelleinteriors.com</p>
+            <p>+44 (0) 20 7946 0812</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="hero-background-wrapper">
+        <img 
+          src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85" 
+          alt="Modern luxury living room with natural daylight, linen textures, and curated warm furniture" 
+          class="hero-bg-img"
+          fetchpriority="high"
+          loading="eager"
+        >
+        <div class="hero-scrim"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-dash"></span>
+            <span>Bespoke Interior Architecture &amp; Curation</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Spaces Designed to Feel Like Home.
+          </h1>
+
+          <p class="hero-description">
+            We compose quiet, refined sanctuaries grounded in honest materiality, natural luminescence, and intentional spatial balance. Every detail is considered; every room is made to be lived in.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              Explore Our Projects
+            </a>
+            <a href="#about" class="btn btn-secondary">
+              The Studio Story
+            </a>
+          </div>
+
+          <div class="hero-meta-bar">
+            <div class="meta-item">
+              <span class="meta-number">120+</span>
+              <span class="meta-label">Bespoke Residences Completed</span>
+            </div>
+            <div class="meta-divider"></div>
+            <div class="meta-item">
+              <span class="meta-number">08</span>
+              <span class="meta-label">Years of Craft &amp; Excellence</span>
+            </div>
+            <div class="meta-divider"></div>
+            <div class="meta-item">
+              <span class="meta-number">100%</span>
+              <span class="meta-label">Turnkey Architectural Delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT SECTION -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left Column: Architectural Imagery with Tasteful Overlap -->
+          <div class="about-media-col">
+            <div class="about-image-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80" 
+                alt="Curated contemporary living room by AURELLE Interiors showcasing subtle textures and custom joinery" 
+                class="about-main-image"
+                loading="lazy"
+              >
+              <div class="about-floating-card">
+                <span class="quote-symbol">&ldquo;</span>
+                <p class="floating-card-quote">Architecture and interior design should never shout. True luxury speaks in a calm, confident whisper.</p>
+                <span class="floating-card-author">&mdash; Elena Vance, Creative Director</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Natural Narrative & Studio Introduction -->
+          <div class="about-text-col">
+            <div class="section-badge">ABOUT THE STUDIO</div>
+            <h2 class="section-title">Thoughtful Design. Timeless Living.</h2>
+
+            <div class="about-body">
+              <p class="lead-text">
+                Founded with a conviction that our surroundings profoundly shape our sense of peace, AURELLE Interiors crafts refined spaces that transcend fleeting trends.
+              </p>
+              <p>
+                We collaborate closely with private homeowners, discerning collectors, and architectural partners across the UK and mainland Europe. From historic country estates to sleek metropolitan penthouses, our multidisciplinary studio balances structural rigor with tactile warmth.
+              </p>
+              <p>
+                Our method begins not with furniture catalogues, but with light, proportion, and human habit. By curating raw lime-washed plaster, honed limestone, seasoned oak, and custom upholstery, we craft homes imbued with effortless calm and enduring character.
+              </p>
+            </div>
+
+            <!-- Pillars Strip -->
+            <div class="about-pillars">
+              <div class="pillar-item">
+                <span class="pillar-num">01</span>
+                <div>
+                  <h4 class="pillar-title">Sensory Materials</h4>
+                  <p class="pillar-text">Sustainably sourced woods, natural stonework, and organic linens that patinate gracefully over time.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <span class="pillar-num">02</span>
+                <div>
+                  <h4 class="pillar-title">Architectural Flow</h4>
+                  <p class="pillar-text">Uncompromising space planning engineered around natural sunlight, circulation, and intuitive day-to-day living.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <span class="pillar-num">03</span>
+                <div>
+                  <h4 class="pillar-title">Artisan Customization</h4>
+                  <p class="pillar-text">One-of-a-kind millwork, bespoke lighting commissions, and vintage art curation tailored to your lineage.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-signature-block">
+              <div class="signature-text">Elena Vance &amp; Marcus Thorne</div>
+              <span class="signature-role">Founding Partners &amp; Principal Designers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SERVICES SECTION -->
+    <section class="services-section section-padding bg-ivory-alt" id="services">
+      <div class="container">
+        <div class="section-header-centered">
+          <div class="section-badge">PRACTICE &amp; DISCIPLINES</div>
+          <h2 class="section-title">Our Core Disciplines</h2>
+          <p class="section-subtitle">
+            From complete ground-up structural transformations to curated final styling, our practice offers comprehensive design services with obsessive attention to craft.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service Block 1 -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <span class="service-index">01</span>
+              <div class="service-icon-box" aria-hidden="true">
+                <!-- Architectural House SVG Icon -->
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-title">Residential Interior Design</h3>
+            <p class="service-description">
+              End-to-end architectural interior services for private residences. We orchestrate every phase from initial moodboards, spatial drafting, and finishes selection to contractor oversight and turnkey move-in.
+            </p>
+            <ul class="service-features">
+              <li>Comprehensive technical CAD &amp; elevation drawings</li>
+              <li>Bespoke kitchen, bath &amp; dressing room cabinetry</li>
+              <li>Hardware, sanitaryware &amp; architectural lighting specification</li>
+              <li>Site supervision &amp; trade contractor coordination</li>
+            </ul>
+            <div class="service-action">
+              <a href="#contact" class="service-link" data-service="Residential Interior Design">
+                Inquire About Residential Design &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Service Block 2 -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <span class="service-index">02</span>
+              <div class="service-icon-box" aria-hidden="true">
+                <!-- Compass / Blueprint Layout SVG Icon -->
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-title">Space Planning</h3>
+            <p class="service-description">
+              Optimizing volumes and circulation patterns to maximize comfort, natural illumination, and functional ease. We re-imagine awkward layouts into serene, intuitively balanced environments.
+            </p>
+            <ul class="service-features">
+              <li>Structural circulation &amp; daylight optimization</li>
+              <li>Zoning for open-plan and intimate lifestyle zones</li>
+              <li>Sightline harmonization and acoustic balance</li>
+              <li>3D spatial modeling and layout feasibility studies</li>
+            </ul>
+            <div class="service-action">
+              <a href="#contact" class="service-link" data-service="Space Planning">
+                Inquire About Space Planning &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Service Block 3 -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <span class="service-index">03</span>
+              <div class="service-icon-box" aria-hidden="true">
+                <!-- Furniture / Lamp Armchair SVG Icon -->
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path>
+                  <path d="M3 11v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0z"></path>
+                  <line x1="5" y1="18" x2="5" y2="21"></line>
+                  <line x1="19" y1="18" x2="19" y2="21"></line>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-title">Furniture &amp; Styling</h3>
+            <p class="service-description">
+              The tactile soul of the interior. We curate collectible mid-century antiques, commission bespoke handcrafted furniture, select artisan textiles, and procure fine art for an elevated residential atmosphere.
+            </p>
+            <ul class="service-features">
+              <li>Custom upholstery &amp; drapery fabric curation</li>
+              <li>Antique gallery &amp; auction sourcing worldwide</li>
+              <li>Commissioned artisan ceramic &amp; sculptural objects</li>
+              <li>Final white-glove staging, hanging &amp; styling</li>
+            </ul>
+            <div class="service-action">
+              <a href="#contact" class="service-link" data-service="Furniture & Styling">
+                Inquire About Furniture &amp; Styling &rarr;
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FEATURED PROJECTS -->
+    <section class="projects-section section-padding" id="projects">
+      <div class="container">
+        <div class="projects-header-flex">
+          <div>
+            <div class="section-badge">SELECTED PORTFOLIO</div>
+            <h2 class="section-title">Featured Projects</h2>
+          </div>
+          <p class="projects-header-desc">
+            A curated glimpse into recent residential commissions where restrained luxury and tailored architecture converge.
+          </p>
+        </div>
+
+        <!-- Project Filter Controls -->
+        <div class="project-filters" role="tablist" aria-label="Filter Projects">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Works</button>
+          <button type="button" class="filter-btn" data-filter="residential" role="tab" aria-selected="false">Residential</button>
+          <button type="button" class="filter-btn" data-filter="minimalist" role="tab" aria-selected="false">Minimalist</button>
+          <button type="button" class="filter-btn" data-filter="restoration" role="tab" aria-selected="false">Restoration</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: The Modern Residence -->
+          <article class="project-card" data-category="residential" data-project-id="modern-residence">
+            <div class="project-image-container">
+              <img 
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" 
+                alt="The Modern Residence in Cotswolds by AURELLE Interiors" 
+                class="project-image"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <span class="project-explore-pill">View Project Details</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-header-row">
+                <h3 class="project-title">The Modern Residence</h3>
+                <span class="project-year">2025</span>
+              </div>
+              <p class="project-location">Cotswolds, United Kingdom</p>
+              <p class="project-excerpt">
+                A harmonious dialogue between historic Cotswold limestone masonry and a contemporary pavilion of floor-to-ceiling glass, Belgian linen, and smoked oak.
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 2: The Olive House -->
+          <article class="project-card" data-category="restoration" data-project-id="olive-house">
+            <div class="project-image-container">
+              <img 
+                src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80" 
+                alt="The Olive House in Provence by AURELLE Interiors" 
+                class="project-image"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <span class="project-explore-pill">View Project Details</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-header-row">
+                <h3 class="project-title">The Olive House</h3>
+                <span class="project-year">2024</span>
+              </div>
+              <p class="project-location">Provence, France</p>
+              <p class="project-excerpt">
+                Restoring a 19th-century farmhouse with earthy lime washes, hand-chiseled travertine, muted bronze ironmongery, and shaded courtyard pergolas.
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 3: Contemporary Living -->
+          <article class="project-card" data-category="residential" data-project-id="contemporary-living">
+            <div class="project-image-container">
+              <img 
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" 
+                alt="Contemporary Living apartment in Kensington London" 
+                class="project-image"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <span class="project-explore-pill">View Project Details</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-header-row">
+                <h3 class="project-title">Contemporary Living</h3>
+                <span class="project-year">2025</span>
+              </div>
+              <p class="project-location">Kensington, London</p>
+              <p class="project-excerpt">
+                Urban calm redefined in a double-fronted Victorian townhouse. Features sculptural bespoke plaster fireplaces, soft bouclé seating, and seamless walnut joinery.
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 4: The Minimal Apartment -->
+          <article class="project-card" data-category="minimalist" data-project-id="minimal-apartment">
+            <div class="project-image-container">
+              <img 
+                src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80" 
+                alt="The Minimal Apartment loft in Tribeca New York" 
+                class="project-image"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <span class="project-explore-pill">View Project Details</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-header-row">
+                <h3 class="project-title">The Minimal Apartment</h3>
+                <span class="project-year">2024</span>
+              </div>
+              <p class="project-location">Tribeca, New York</p>
+              <p class="project-excerpt">
+                A monolith of Calacatta marble, muted brass, and washed Belgian drapery anchor this 3,400 sq.ft loft overlooking historic cobblestone avenues.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. DESIGN PHILOSOPHY -->
+    <section class="philosophy-section" id="philosophy">
+      <div class="container philosophy-container">
+        <div class="philosophy-content">
+          <div class="philosophy-badge">DESIGN MANIFESTO</div>
+          
+          <h2 class="philosophy-headline">
+            &ldquo;Less, But Better.&rdquo;
+          </h2>
+
+          <p class="philosophy-statement">
+            We believe an extraordinary interior does not rely on visual noise or fleeting fashion. True elegance is found in the restraint of subtraction—allowing pure proportions, natural sunlight, and honest materiality to take center stage.
+          </p>
+
+          <div class="philosophy-grid">
+            <div class="philosophy-point">
+              <h4 class="philosophy-point-title">Tactile Honesty</h4>
+              <p class="philosophy-point-desc">
+                We favor surfaces that feel genuine to the touch: untreated linen, open-grain oak, unlacquered bronze, and honed stone that acquire beauty with age.
+              </p>
+            </div>
+
+            <div class="philosophy-point">
+              <h4 class="philosophy-point-title">Daylight as Architecture</h4>
+              <p class="philosophy-point-desc">
+                Natural illumination dictates our spatial layout. We study how dawn and dusk wash across every room, molding atmospheric warmth without harsh shadows.
+              </p>
+            </div>
+
+            <div class="philosophy-point">
+              <h4 class="philosophy-point-title">Timeless Longevity</h4>
+              <p class="philosophy-point-desc">
+                By resisting disposable cycles and prioritizing custom artisan joinery, our spaces are designed to remain compelling for generations.
+              </p>
+            </div>
+          </div>
+
+          <div class="philosophy-footer">
+            <span class="philosophy-motto">&mdash; AURELLE Studio Principles, Vol. IV</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Press & Accolades Bar (Realism & Credibility) -->
+    <section class="press-section">
+      <div class="container">
+        <p class="press-label">FEATURED IN LEADING ARCHITECTURAL PUBLICATIONS</p>
+        <div class="press-logos">
+          <span class="press-item">ARCHITECTURAL DIGEST</span>
+          <span class="press-dot">&bull;</span>
+          <span class="press-item">ELLE DECORATION</span>
+          <span class="press-dot">&bull;</span>
+          <span class="press-item">WALLPAPER* MAGAZINE</span>
+          <span class="press-dot">&bull;</span>
+          <span class="press-item">THE WORLD OF INTERIORS</span>
+          <span class="press-dot">&bull;</span>
+          <span class="press-item">VOGUE LIVING</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT SECTION -->
+    <section class="contact-section section-padding" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left Column: Contact Details & Studio Note -->
+          <div class="contact-info-col">
+            <div class="section-badge">COMMISSIONS &amp; INQUIRIES</div>
+            <h2 class="section-title">Begin Your Project With Us</h2>
+            <p class="contact-intro">
+              Whether you are planning a full-scale residential renovation, an architectural restoration, or seek curated furnishing for a single residence, we welcome the opportunity to discuss your vision.
+            </p>
+
+            <div class="studio-locations">
+              <div class="location-card">
+                <h4 class="location-city">London Atelier</h4>
+                <p class="location-address">
+                  42 Mount Street, Mayfair<br>
+                  London W1K 2RX, United Kingdom
+                </p>
+                <p class="location-contact">
+                  <a href="tel:+442079460812">+44 (0) 20 7946 0812</a><br>
+                  <a href="mailto:london@aurelleinteriors.com">london@aurelleinteriors.com</a>
+                </p>
+              </div>
+
+              <div class="location-card">
+                <h4 class="location-city">Paris Studio</h4>
+                <p class="location-address">
+                  18 Rue de Grenelle, 7ème<br>
+                  75007 Paris, France
+                </p>
+                <p class="location-contact">
+                  <a href="tel:+33140506070">+33 (0) 1 40 50 60 70</a><br>
+                  <a href="mailto:paris@aurelleinteriors.com">paris@aurelleinteriors.com</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="studio-hours">
+              <span class="hours-label">Studio Working Hours:</span>
+              <p>Monday &ndash; Friday, 9:00 AM &ndash; 6:00 PM GMT / CET.<br>Private consultations by appointment only.</p>
+            </div>
+          </div>
+
+          <!-- Right Column: Sophisticated Contact Form -->
+          <div class="contact-form-col">
+            <div class="form-wrapper">
+              <h3 class="form-title">Consultation Request</h3>
+              <p class="form-subtitle">Please share an outline of your project. Our studio team responds within two business days.</p>
+
+              <form id="contactForm" class="aurelle-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contactName">Your Full Name <span class="required-star">*</span></label>
+                    <input 
+                      type="text" 
+                      id="contactName" 
+                      name="name" 
+                      class="form-control" 
+                      placeholder="e.g. Lady Clara Somerset"
+                      required
+                    >
+                    <span class="field-error" id="nameError"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contactEmail">Email Address <span class="required-star">*</span></label>
+                    <input 
+                      type="email" 
+                      id="contactEmail" 
+                      name="email" 
+                      class="form-control" 
+                      placeholder="clara@example.com"
+                      required
+                    >
+                    <span class="field-error" id="emailError"></span>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contactPhone">Telephone (Optional)</label>
+                    <input 
+                      type="tel" 
+                      id="contactPhone" 
+                      name="phone" 
+                      class="form-control" 
+                      placeholder="+44 7700 900123"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="projectType">Project Type <span class="required-star">*</span></label>
+                    <div class="select-wrapper">
+                      <select id="projectType" name="projectType" class="form-control" required>
+                        <option value="" disabled selected>Select an Engagement Type</option>
+                        <option value="Residential Interior Design">Residential Interior Design (Full Home)</option>
+                        <option value="Space Planning">Architectural Space Planning &amp; Zoning</option>
+                        <option value="Furniture & Styling">Furniture, Lighting &amp; Art Procurement</option>
+                        <option value="Historic Restoration">Heritage Property Restoration</option>
+                        <option value="Commercial / Boutique">Boutique Commercial / Hospitality</option>
+                      </select>
+                    </div>
+                    <span class="field-error" id="typeError"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="projectLocation">Project Location &amp; Estimated Scope</label>
+                  <input 
+                    type="text" 
+                    id="projectLocation" 
+                    name="location" 
+                    class="form-control" 
+                    placeholder="e.g. Kensington, London &mdash; 4-bedroom townhouse renovation"
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage">Project Details &amp; Timeline <span class="required-star">*</span></label>
+                  <textarea 
+                    id="contactMessage" 
+                    name="message" 
+                    rows="4" 
+                    class="form-control" 
+                    placeholder="Tell us about the property, your architectural aspirations, key timelines, or material preferences..." 
+                    required
+                  ></textarea>
+                  <span class="field-error" id="messageError"></span>
+                </div>
+
+                <div class="form-submit-row">
+                  <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                    <span class="btn-text">Contact Us</span>
+                    <span class="btn-loader" aria-hidden="true"></span>
+                  </button>
+                  <span class="privacy-note">We honor your privacy. Non-disclosure agreements respected upon request.</span>
+                </div>
+
+                <!-- Live Feedback Box -->
+                <div class="form-notification" id="formNotification" role="alert" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top-grid">
+        <!-- Brand Summary -->
+        <div class="footer-col footer-col-brand">
+          <a href="#home" class="footer-logo">
+            <span class="brand-name">AURELLE</span>
+            <span class="brand-tagline">INTERIORS</span>
+          </a>
+          <p class="footer-brand-bio">
+            A bespoke interior design and architectural practice dedicated to crafting calm, timeless spaces rooted in light, natural materials, and quiet refinement.
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" class="social-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><line x1="12" y1="4" x2="12" y2="20"></line><path d="M8 9a4 4 0 1 1 8 0c0 3-2 5-4 5s-3-2-3-4"></path></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About the Studio</a></li>
+            <li><a href="#projects">Selected Projects</a></li>
+            <li><a href="#services">Design Disciplines</a></li>
+            <li><a href="#philosophy">Design Manifesto</a></li>
+            <li><a href="#contact">Contact &amp; Commissions</a></li>
+          </ul>
+        </div>
+
+        <!-- Selected Projects Direct -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Projects</h4>
+          <ul class="footer-links">
+            <li><a href="#projects" class="footer-project-trigger" data-project-id="modern-residence">The Modern Residence</a></li>
+            <li><a href="#projects" class="footer-project-trigger" data-project-id="olive-house">The Olive House</a></li>
+            <li><a href="#projects" class="footer-project-trigger" data-project-id="contemporary-living">Contemporary Living</a></li>
+            <li><a href="#projects" class="footer-project-trigger" data-project-id="minimal-apartment">The Minimal Apartment</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact Info -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Inquiries</h4>
+          <div class="footer-contact-block">
+            <p><strong>Commissions:</strong><br><a href="mailto:studio@aurelleinteriors.com">studio@aurelleinteriors.com</a></p>
+            <p><strong>Press &amp; Publications:</strong><br><a href="mailto:press@aurelleinteriors.com">press@aurelleinteriors.com</a></p>
+            <p><strong>General Inquiries:</strong><br>+44 (0) 20 7946 0812</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom-bar">
+        <p class="copyright">&copy; 2026 AURELLE Interiors Ltd. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <span>Architectural Registration RIBA / BIID Affiliate</span>
+          <span class="legal-separator">&bull;</span>
+          <a href="#home">Privacy Policy</a>
+          <span class="legal-separator">&bull;</span>
+          <a href="#home">Terms of Commission</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal (Enhanced Interactive Experience) -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true" role="dialog" aria-labelledby="modalProjectTitle">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="closeProjectModal" aria-label="Close dialog">&times;</button>
+      <div class="modal-body" id="modalProjectContent">
+        <!-- Injected via JavaScript based on selected project -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Book a Consultation Modal -->
+  <div class="modal-backdrop" id="consultationModal" aria-hidden="true" role="dialog" aria-labelledby="modalConsultTitle">
+    <div class="modal-dialog consultation-dialog">
+      <button type="button" class="modal-close-btn" id="closeConsultModal" aria-label="Close dialog">&times;</button>
+      <div class="modal-header">
+        <div class="section-badge">PRIVATE CONSULTATION</div>
+        <h3 id="modalConsultTitle" class="modal-title">Book an Atelier Consultation</h3>
+        <p class="modal-subtitle">Meet our principal designers in our Mayfair or Paris atelier, or schedule an initial private video conference.</p>
+      </div>
+
+      <form id="consultationModalForm" class="consultation-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="consultName">Your Name</label>
+            <input type="text" id="consultName" required class="form-control" placeholder="Jane Doe">
+          </div>
+          <div class="form-group">
+            <label for="consultEmail">Email Address</label>
+            <input type="email" id="consultEmail" required class="form-control" placeholder="jane@example.com">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="consultFormat">Meeting Format</label>
+            <select id="consultFormat" class="form-control">
+              <option value="Mayfair Atelier (London)">In-Person &mdash; Mayfair Atelier (London)</option>
+              <option value="Paris Studio (7ème)">In-Person &mdash; Paris Studio (Rue de Grenelle)</option>
+              <option value="Private Video Conference">Private Video Conference (Worldwide)</option>
+              <option value="On-Site Property Walkthrough">On-Site Property Consultation</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="consultTimeline">Target Start Timeline</label>
+            <select id="consultTimeline" class="form-control">
+              <option value="Immediate (Next 30 days)">Immediate (Next 30 days)</option>
+              <option value="Q1 / Q2 2027">Next 3&ndash;6 Months</option>
+              <option value="Planning for 2027">Later this Year / Planning</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="consultNotes">Notes on your residence or architectural scope</label>
+          <textarea id="consultNotes" rows="3" class="form-control" placeholder="Share a few details on your property location and goals..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Confirm Consultation Request</button>
+        <div id="consultSuccessMsg" class="consult-success-msg"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
